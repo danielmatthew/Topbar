@@ -425,7 +425,7 @@
         }
 
         #main-nav li {
-            margin-left: 0.5em;
+            margin-left: 0.125em;
         }
 
         #main-nav li:first-child {
@@ -456,6 +456,11 @@
 
         .flex {
             display: -webkit-flex;
+            -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
         }
 
         .float #logo, .float #main-nav, .float form {
@@ -466,7 +471,7 @@
             float: right;
         }
 
-        .float:after {
+        .float:after, #userInfoBar:after {
             content: "";
             display: table;
             clear: both;
@@ -538,6 +543,135 @@
             width: 25px;
             vertical-align: middle;
         }
+
+        #content {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #userInfoBar {
+            background-color: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            margin-bottom: 1em;
+        }
+
+        #userInfoBar h3, .medl h2 {
+            display: inline;
+            color: orangered;
+            font-size: 3em;
+            text-transform: uppercase;
+            vertical-align: middle;
+            line-height: 1.25;
+        }
+
+        #stats {
+            float: right;
+            text-align: right;
+        }
+
+        .number {
+            display: block;
+
+        }
+
+        .user-tile {
+            background-color: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            padding: 10px;
+            margin-bottom: 1em;
+        }
+
+        .details {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        h4 {
+            margin: 0;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .medl {
+            background-color: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            padding: 10px
+        }
+
+        .thumb {
+            margin-top: -10px;
+            vertical-align: top;
+        }
+
+        .medl .meta {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .meta h2, .meta p {
+            margin: 0;
+            line-height: 1;
+        }
+
+        .meta .desc {
+            margin-bottom: 1em;
+        }
+
+        .stream {
+            width: 95%;
+            margin: auto;
+        }
+
+        .didl {
+            margin-bottom: 1%;
+            margin-right: 1%;
+            display: block;
+            width: 180px;
+            height:100%;
+            float: left;
+        }
+
+        .didl img {
+            max-width: 100%;
+        }
+
+        .featured {
+            width: 600px;
+            height: 100%;
+            float: left;
+            margin-right: 1%;
+        }
+
+        .didlr-font {
+            clear: both;
+            font-family: "Didlr";
+        }
+
+        .iconfont {
+            font-size: 3em;
+            display: block;
+            background-color: white;
+            width: 1em;
+            color: red;
+            padding: 1em;
+            height: 1em;
+            margin: 1em;
+        }
+
+        .star {
+            font-style: normal;
+        }
+
+        .star:before {
+            content: "\e014";
+        }
+
+        .hidetext {
+            color: transparent;
+            font: 0/0 a;
+            text-shadow: none;
+        }
+
     </style>
 </head>
 <body>
@@ -587,8 +721,83 @@
                 <li><i class="icon settings"></i></li>
             </ul>
         </nav>
+    </section>
 
+<!--     <section id="content">
+        <section id="userInfoBar">
+            <img src="http://placehold.it/40x40" class="avatar" />
+            <h3>philstarborn1984</h3>
+            <ul id="stats">
+                <li class="button active">
+                    <a href="#"><span class="number">78</span> didls</a>
+                </li>
+                <li class="button">
+                    <a href="#"><span class="number">18</span> medls</a>
+                </li>
+                <li class="button">
+                    <a href="#"><span class="number">85</span> following</a>
+                </li>
+                <li class="button">
+                    <a href="#"><span class="number">70</span> followers</a>
+                </li>
+                <li class="button">
+                    <a href="#"><span class="number">756</span> stars</a>
+                </li>
+            </ul>
+        </section>
 
+        <div class="user-tile">
+            <img src="http://placehold.it/40x40" class="avatar" />
+            <div class="details">
+                <h4>Username</h4>
+                <ul>
+                    <li>0 medls</li>
+                    <li>34 didls</li>
+                    <li>23 followers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="medl">
+            <a href="#"><img src="http://placehold.it/150x150" class="thumb"></a>
+            <div class="meta">
+                <h2><a href="#">Opened a Gallery</a></h2>
+                <p class="desc">This means you did a didl</p>
+                <p class="earned">Earned on the last day</p>
+            </div>
+        </div>
+    </section> -->
+    <section class="stream">
+        <div class="didl featured">
+            <img src="http://placehold.it/600x400" />
+        </div>
+        <div class="didl">
+            <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="didl">
+            <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="didl">
+            <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="didl">
+            <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="didl">
+            <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="didl">
+            <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="didl">
+            <img src="http://placehold.it/200x200" />
+        </div>
+    </section>
+
+    <section class="didlr-font">
+        <a class="button iconfont" href="#">
+            <i class="star"></i><span class="hidetext">star</span>
+        </a>
     </section>
 </body>
 </html>
